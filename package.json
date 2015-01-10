@@ -1,0 +1,14 @@
+{
+  "name": "language-m68k",
+  "version": "0.0.0",
+  "description": "Syntax highlighting for 68000 assembly",
+  "author": {
+    "name": "François Galea",
+    "email": "fgalea@free.fr"
+  },
+  "repository": "https://github.com/zerkman/language-m68k",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

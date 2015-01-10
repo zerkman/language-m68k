@@ -1,0 +1,3 @@
+'.source.m68k':
+  'editor':
+    'commentStart': ';'
