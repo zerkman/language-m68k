@@ -54,11 +54,11 @@
       4: 'name': 'entity.name.function.m68k'
   }
   {
-    'match': '\\b(?i)(rsreset|rs(.[bwl])?|equ|include|incbin)(?-i)\\b'
+    'match': '\\b(?i)(rsreset|rsset|rs(.[bwl])?|equ|fequ|include|incbin|set|reg|cargs|fequ|xref|xdef)(?-i)\\b'
     'name': 'keyword.control.define.m68k'
   }
   {
     'name': 'keyword.control.directive.m68k'
-    'match': '\\b(?i)((d[cs]|dcb)(.[sbwl])?|even|ifeq|ifne|endif|rept|endr|macro|endm|section|text|data|bss|end)(?-i)\\b'
+    'match': '\\b(?i)((d[cs]|dcb)(.[sbwl])?|even|ifeq|ifne|ifgt|ifge|iflt|ifle|endif|endc|rept|endr|macro|endm|section|text|data|bss|end|cnop|opt|machine|comment)(?-i)\\b'
   }
 ]
