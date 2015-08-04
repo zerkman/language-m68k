@@ -59,6 +59,6 @@
   }
   {
     'name': 'keyword.control.directive.m68k'
-    'match': '\\b(?i)(d[cs](.[bwl])?|even|ifeq|ifne|endif|rept|endr|macro|endm|section|text|data|bss|end)(?-i)\\b'
+    'match': '\\b(?i)((d[cs]|dcb)(.[sbwl])?|even|ifeq|ifne|endif|rept|endr|macro|endm|section|text|data|bss|end)(?-i)\\b'
   }
 ]
