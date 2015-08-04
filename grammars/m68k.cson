@@ -45,13 +45,20 @@
     'name': 'storage.other.register.m68k'
   }
   {
-    'match': '\\b(?i)([as]bcd(\\.b)?|(add|sub)[iqx]?(\\.[bwl])?|adda(\\.[wl])?|(and|eor|or)(i)?(\\.[bwl])?|(rox?|[al]s)[lr](\\.[bwl])?|b(chg|clr|set|tst)(\\.[bl])?|chk(\\.w)?|clr(\\.[bwl])?|cmp[im]?(\\.[bwl])?|cmpa(\\.[wl])?|divs|divu|exg(\\.l)?|ext(\\.[wl])?|illegal|jmp|jsr|lea(\\.l)?|link|move[amp](\\.[wl])?|moveq(\\.l)?|move(\\.[bwl])?|muls|mulu|nbcd(\\.b)?|(negx?|not)(\\.[bwl])?|nop|pea(\\.l)?|reset|rte|rtr|rts|s(f|t|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs)(\\.b)?|stop|swap(\\.l)?|tas(\\.b)?|trap|trapv|tst|tst\\.b|tst\\.w|tst\\.l|unlk)(?-i)\\b'
+    'match': '\\b(?i)([as]bcd(\\.b)?|(add|sub)[iqx]?(\\.[bwl])?|adda(\\.[wl])?|(and|eor|or)(i)?(\\.[bwl])?|(rox?|[al]s)[lr](\\.[bwl])?|b(chg|clr|set|tst)(\\.[bl])?|chk(\\.w)?|clr(\\.[bwl])?|cmp[im]?(\\.[bwl])?|cmpa(\\.[wl])?|divs|divu|exg(\\.l)?|ext(\\.[wl])?|illegal|lea(\\.l)?|link|move[amp](\\.[wl])?|moveq(\\.l)?|move(\\.[bwl])?|muls|mulu|nbcd(\\.b)?|(negx?|not)(\\.[bwl])?|nop|pea(\\.l)?|reset|rte|rtr|rts|s(f|t|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs)(\\.b)?|stop|swap(\\.l)?|tas(\\.b)?|trap|trapv|tst|tst\\.b|tst\\.w|tst\\.l|unlk)(?-i)\\b'
     'name': 'support.mnemonic.m68k'
   }
   {
-    'match': '\\b(?i)(b(ra|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs|sr)(\\.[sw])?)(?-i)\\s+(.?[a-zA-Z_][a-zA-Z0-9_]*)\\b'
+    'match': '\\b(?i)(b(ra|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs|sr)(\\.[sw])?)(?-i)\\s+(\\.?[a-zA-Z_][a-zA-Z0-9_]*)\\b'
     'captures':
       1: 'name': 'support.mnemonic.branch.m68k'
+      4: 'name': 'entity.name.function.m68k'
+  }
+  {
+    'match': '\\b(?i)(j(sr|mp))(?-i)\\s+((\\.?[a-zA-Z_][a-zA-Z0-9_]*)|\\$?\\d*\\((sp|pc|a[0-7])(,(d|a)[0-7](.(w|l))?(\\*[248])?)?\\))'
+    'captures':
+      1: 'name': 'support.mnemonic.branch.m68k'
+      3: 'name': 'storage.other.register.m68k'
       4: 'name': 'entity.name.function.m68k'
   }
   {
