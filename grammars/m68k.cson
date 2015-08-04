@@ -3,10 +3,12 @@
 'fileTypes': [
   's'
   'S'
+  'i'
+  'I'
 ]
 'patterns': [
   {
-    'match': ';.*$'
+    'match': '(\\*|;).*$'
     'name': 'comment.m68k'
   }
   {
