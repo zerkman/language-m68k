@@ -8,7 +8,7 @@
 ]
 'patterns': [
   {
-    'match': '(\\*|;).*$'
+    'match': '(;|\\B\\*).*$'
     'name': 'comment.m68k'
   }
   {
