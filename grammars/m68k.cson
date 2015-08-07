@@ -41,7 +41,7 @@
     'name': 'constant.numeric.hex.m68k'
   }
   {
-    'match': '\\b(?i)([ad]([0-7])|sr|sp|pc|usp|dfc|sfc|vbr)(?-i)\\b'
+    'match': '\\b(?i)([ad]([0-7])|sr|sp|pc|usp|dfc|sfc|vbr|cacr|caar|msp|isp)(?-i)\\b'
     'name': 'storage.other.register.m68k'
   }
   {
