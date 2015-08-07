@@ -45,7 +45,7 @@
     'name': 'storage.other.register.m68k'
   }
   {
-    'match': '\\b(?i)([as]bcd(\\.b)?|(add|sub)[iqx]?(\\.[bwl])?|adda(\\.[wl])?|(and|eor|or)(i)?(\\.[bwl])?|(rox?|[al]s)[lr](\\.[bwl])?|b(chg|clr|set|tst)(\\.[bl])?|bf(chg|clr|extu|exts|ffo|ins|set|tst)|chk(\\.[wl])?|chk2(\\.[bwl])?|clr(\\.[bwl])?|cas(\\.[bwl])?|cas2(\\.[wl])?|cmp[im2]?(\\.[bwl])?|cmpa(\\.[wl])?|divs|divu|exg(\\.l)?|ext(\\.[wl])?|extb.l|illegal|lea(\\.l)?|link|move[amp](\\.[wl])?|moveq(\\.l)?|move(\\.[bwl])?|muls|mulu|nbcd(\\.b)?|(negx?|not)(\\.[bwl])?|nop|pea(\\.l)?|reset|rte|rtri|rtd|rts|s(f|t|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs)(\\.b)?|stop|swap(\\.l)?|tas(\\.b)?|trap|trapv|trap(f|t|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs)|tst|tst\\.b|tst\\.w|tst\\.l|unlk|pack|unpk)(?-i)\\b'
+    'match': '\\b(?i)([as]bcd(\\.b)?|(add|sub)[iqx]?(\\.[bwl])?|adda(\\.[wl])?|(and|eor|or)(i)?(\\.[bwl])?|(rox?|[al]s)[lr](\\.[bwl])?|b(chg|clr|set|tst)(\\.[bl])?|bf(chg|clr|extu|exts|ffo|ins|set|tst)|chk(\\.[wl])?|chk2(\\.[bwl])?|clr(\\.[bwl])?|cas(\\.[bwl])?|cas2(\\.[wl])?|cmp[im2]?(\\.[bwl])?|cmpa(\\.[wl])?|divs|divu|exg(\\.l)?|ext(\\.[wl])?|extb.l|illegal|lea(\\.l)?|link|move[amp](\\.[wl])?|moveq(\\.l)?|movec(\\.l)?|move(\\.[bwl])?|moves(\\.[bwl])?|muls|mulu|nbcd(\\.b)?|(negx?|not)(\\.[bwl])?|nop|pea(\\.l)?|reset|rte|rtri|rtd|rts|s(f|t|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs)(\\.b)?|stop|swap(\\.l)?|tas(\\.b)?|trap|trapv|trap(f|t|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs)|tst|tst\\.b|tst\\.w|tst\\.l|unlk|pack|unpk)(?-i)\\b'
     'name': 'support.mnemonic.m68k'
   }
   {
