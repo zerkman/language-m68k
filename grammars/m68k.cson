@@ -82,6 +82,19 @@
         4: 'name': 'storage.other.register.privileged.m68k'
   }
   {
+    'match': '\\b(?i)(cinv[lp]|cpush[lp])\\s+(dc|ic|bc),\\((a[0-7])(?-i)\\b'
+    'captures':
+        1: 'name': 'support.mnemonic.privileged.m68k'
+        2: 'name': 'storage.other.register.privileged.m68k'
+        3: 'name': 'storage.other.register.m68k'
+  }
+  {
+    'match': '\\b(?i)(cinva|cpusha)\\s+(dc|ic|bc)(?-i)\\b'
+    'captures':
+      1: 'name': 'support.mnemonic.privileged.m68k'
+      2: 'name': 'storage.other.register.privileged.m68k'
+  }
+  {
     'match': '\\b(?i)((andi|eori|ori)(\\.w)?(\\s+(.+),(sr)))(?-i)\\b'
     'captures':
         2: 'name': 'support.mnemonic.privileged.m68k'
