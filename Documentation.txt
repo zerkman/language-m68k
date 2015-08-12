@@ -1,0 +1,58 @@
+/*
+  Some optional CSS classes to support (m68k) assembly code.
+  It needs to go somewhere that it is parsed. For now, I just paste it at the end of
+  my syntax highlighter's base.less, but that is probably not the best way.
+  The example colors here are made for a dark editor theme.
+  TODO: Document this stuff properly!
+*/
+
+
+.support.mnemonic {
+  color: rgba(217, 245, 181, 1);
+}
+
+.support.mnemonic.size {
+  color: rgba(177, 175, 161, 1);
+}
+
+.support.mnemonic.privileged {
+  color: #ffccaa;
+}
+
+.support.mnemonic.label {
+  color: green;
+}
+
+.support.mnemonic.operand.source {
+  color: #8cf;
+}
+.support.mnemonic.operand.source.constant {
+  color: silver;
+}
+
+.support.mnemonic.operand.source.constant.hex {
+  color: pink;
+}
+.support.mnemonic.operand.source.constant.binary {
+  color: teal;
+}
+
+.support.mnemonic.operand.source.constant.decimal {
+  color: orange;
+}
+
+.support.mnemonic.branch {
+    color: blue;
+}
+
+.storage.other.register {
+  color: #88aaff;
+}
+
+.storage.other.register.privileged {
+  color: #ffccaa;
+}
+
+.storage.other.register.cache {
+  color: #aaccff;
+}
