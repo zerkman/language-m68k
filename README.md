@@ -1,6 +1,16 @@
 # m68k assembly highlighting for Atom
 
-Syntax highlighting for the Motorola 68000 assembly language in Atom.
+Syntax highlighting for the Motorola 680x0 assembly language in Atom.
+
+## Authors
+
+* François Galea
+  * original package
+  * initial 68000 opcodes and a subset of Motorola directives
+* Kåre Andersen
+  * support for most 020/030/040/060 instructions
+  * support for most devpac and vasm directives
+  * syntax highlighting enhancements
 
 ## Install
 
@@ -11,4 +21,5 @@ To install the package language-m68k:
 
 ## TODO
 
-Support for other processors from the 680x0, DragonBall or ColdFire families.
+* support for FPU instructions
+* support for other processors from the DragonBall or ColdFire families
