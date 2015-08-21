@@ -1,6 +1,6 @@
 {
   "name": "language-m68k",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Syntax highlighting for 68000 assembly",
   "author": {
     "name": "François Galea",
