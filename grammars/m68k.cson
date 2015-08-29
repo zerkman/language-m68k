@@ -178,11 +178,41 @@
       4: 'name': 'entity.name.function.m68k'
   }
   {
+    'match': '\\b(?i)(fabs|facos|fadd|fatan|fatanh|fasin|fsub|fasub|ftst|fcmp|fdiv|fmul|fmove|fneg|fsqrt)(\\.[xbwlsd])?\\s+((fp[0-7])|.+)(,((fp[0-7])|.+))?(?-i)\\b'
+    'captures':
+      1: 'name': 'support.mnemonic.m68k'
+      2: 'name': 'support.mnemonic.size.m68k'
+      3: 'name': 'support.mnemonic.operand.source'
+      4: 'name': 'entity.name.function.m68k'
+      5: 'name': 'entity.name.function.m68k'
+
+  }
+  {
+    'match': '\\b(?i)(fmovem)(\\.[xl])?\\s+(.+),(.+)(?-i)\\b'
+    'captures':
+      1: 'name': 'support.mnemonic.m68k'
+      2: 'name': 'support.mnemonic.size.m68k'
+      3: 'name': 'support.mnemonic.operand.source'
+      4: 'name': 'entity.name.function.m68k'
+  }
+  {
+    'match': '\\b(?i)(fsave|frestore)\\s+((\\(a[0-7]|sp]\\))|.+)(?-i)\\b'
+    'captures':
+      1: 'name': 'support.mnemonic.m68k'
+      2: 'name': 'support.mnemonic.operand.source'
+  }
+  {
+    'match': '\\b(?i)(f[bs](f|eq|ogt|oge|olt|ole|ogl|or|un|ueq|ugt|uge|ult|ule|ne|t|seq|gt|ge|lt|le|gl|gle|ngle|ngl|nle|nlt|nge|ngt|sne|st|sf|seq|sogt)(\\.[sw])?)(?-i)\\s+(\\.?[a-zA-Z_][a-zA-Z0-9_]*)\\b'
+    'captures':
+      1: 'name': 'support.mnemonic.branch.m68k'
+      4: 'name': 'entity.name.function.m68k'
+  }
+  {
     'match': '\\b(?i)(rsreset|rsset|rs(.[bwl])?|equ|fequ|include|incbin|set|reg|cargs|fequ|xref|xdef)(?-i)\\b'
     'name': 'keyword.control.define.m68k'
   }
   {
     'name': 'keyword.control.directive.m68k'
-    'match': '\\b(?i)((d[cs]|dcb)(.[sbwl])?|even|ifeq|ifne|ifgt|ifge|iflt|ifle|endif|endc|rept|endr|macro|endm|section|text|data|bss|end|cnop|opt|machine|comment)(?-i)\\b'
+    'match': '\\b(?i)((d[cs]|dcb)(.[sbwl])?|even|ifeq|ifne|ifgt|ifge|iflt|ifle|endif|endc|rept|endr|macro|endm|section|text|data|bss|end|cnop|opt|machine|fpu|comment)(?-i)\\b'
   }
 ]
