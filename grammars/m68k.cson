@@ -171,20 +171,20 @@
       4: 'name': 'entity.name.function.m68k'
   }
   {
-    'match': '\\b(?i)(db(ra|f|t|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs))(?-i)\\s+(d[0-7])\\s*,\\s*([a-zA-Z_][a-zA-Z0-9_]*)\\b'
+    'match': '\\b(?i)(db(ra|f|t|cc|hs|cs|lo|eq|ge|gt|hi|le|ls|lt|mi|ne|pl|vc|vs))(?-i)\\s+(d[0-7])\\s*,\\s*\\.*([a-zA-Z_][a-zA-Z0-9_]*)\\b'
     'captures':
       1: 'name': 'support.mnemonic.loop.m68k'
       3: 'name': 'storage.other.register.m68k'
       4: 'name': 'entity.name.function.m68k'
   }
   {
-    'match': '\\b(?i)(fabs|facos|fadd|fatan|fatanh|fasin|fsub|fasub|ftst|fcmp|fdiv|fmul|fmove|fneg|fsqrt)(\\.[xbwlsd])?\\s+((fp[0-7])|.+)(,((fp[0-7])|.+))?(?-i)\\b'
+    'match': '\\b(?i)(f(s|d)?(abs|acos|add|atan|atanh|asin|sub|asub|tst|cmp|div|mul|move|neg|sqrt|int|intrz|getexp|getman|mod|rem|scale|sgldiv|sglmul|etox|etoxm1|logn|lognp1|log10|log2|tentox|twotox|cos|sin|cosh|sinh|sincos|tan|tanh|))(\\.[xbwlsd])?\\s+((fp[0-7])|.+)(,((fp[0-7])|.+))?(?-i)\\b'
     'captures':
       1: 'name': 'support.mnemonic.m68k'
-      2: 'name': 'support.mnemonic.size.m68k'
-      3: 'name': 'support.mnemonic.operand.source'
-      4: 'name': 'entity.name.function.m68k'
-      5: 'name': 'entity.name.function.m68k'
+      4: 'name': 'support.mnemonic.size.m68k'
+      5: 'name': 'support.mnemonic.operand.source'
+      6: 'name': 'entity.name.function.m68k'
+      7: 'name': 'entity.name.function.m68k'
 
   }
   {
@@ -196,17 +196,44 @@
       4: 'name': 'entity.name.function.m68k'
   }
   {
-    'match': '\\b(?i)(fsave|frestore)\\s+((\\(a[0-7]|sp]\\))|.+)(?-i)\\b'
+    'match': '\\b(?i)fnop(?-i)\\b'
+    'name': 'support.mnemonic.m68k'
+  }
+  {
+    'match': '\\b(?i)(fmovecr)(\\.x)?\\s+(#.+),(fp[0-7])(?-i)\\b'
     'captures':
       1: 'name': 'support.mnemonic.m68k'
+      2: 'name': 'support.mnemonic.size.m68k'
+      3: 'name': 'support.mnemonic.operand.source'
+      4: 'name': 'entity.name.function.m68k'
+  }
+  {
+    'match': '\\b(?i)(fsave|frestore)\\s+((\\(a[0-7]|sp]\\))|.+)(?-i)\\b'
+    'captures':
+      1: 'name': 'support.mnemonic.privileged.m68k'
       2: 'name': 'support.mnemonic.operand.source'
   }
   {
-    'match': '\\b(?i)(f[bs](f|eq|ogt|oge|olt|ole|ogl|or|un|ueq|ugt|uge|ult|ule|ne|t|seq|gt|ge|lt|le|gl|gle|ngle|ngl|nle|nlt|nge|ngt|sne|st|sf|seq|sogt)(\\.[sw])?)(?-i)\\s+(\\.?[a-zA-Z_][a-zA-Z0-9_]*)\\b'
+    'match': '\\b(?i)(f([bs])?(f|eq|ogt|oge|olt|ole|ogl|or|un|ueq|ugt|uge|ult|ule|ne|t|seq|gt|ge|lt|le|gl|gle|ngle|ngl|nle|nlt|nge|ngt|sne|st|sf|seq|sogt))(?-i)\\s+(\\.?([a-zA-Z_][a-zA-Z0-9_]*))\\b'
     'captures':
       1: 'name': 'support.mnemonic.branch.m68k'
       4: 'name': 'entity.name.function.m68k'
   }
+  {
+    'match': '\\b(?i)(fd([bs])?(f|eq|ogt|oge|olt|ole|ogl|or|un|ueq|ugt|uge|ult|ule|ne|t|seq|gt|ge|lt|le|gl|gle|ngle|ngl|nle|nlt|nge|ngt|sne|st|sf|seq|sogt))(?-i)\\s+((d[0-7])),(\\.?([a-zA-Z_][a-zA-Z0-9_]*))\\b'
+    'captures':
+      1: 'name': 'support.mnemonic.branch.m68k'
+      5: 'name': 'storage.other.register.m68k'
+      6: 'name': 'entity.name.function.m68k'
+  }
+  {
+    'match': '\\b(?i)(ftrap(f|eq|ogt|oge|olt|ole|ogl|or|un|ueq|ugt|uge|ult|ule|ne|t|seq|gt|ge|lt|le|gl|gle|ngle|ngl|nle|nlt|nge|ngt|sne|st|sf|seq|sogt))(?-i)\\s+(fp[0-7]),(\\.?[a-zA-Z_][a-zA-Z0-9_]*)\\b'
+    'captures':
+      1: 'name': 'support.mnemonic.branch.m68k'
+      3: 'name': 'storage.other.register.m68k'
+      4: 'name': 'entity.name.function.m68k'
+  }
+
   {
     'match': '\\b(?i)(rsreset|rsset|rs(.[bwl])?|equ|fequ|include|incbin|set|reg|cargs|fequ|xref|xdef)(?-i)\\b'
     'name': 'keyword.control.define.m68k'
