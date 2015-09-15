@@ -9,6 +9,8 @@ Syntax highlighting for the Motorola 680x0 assembly language in Atom.
   * initial 68000 opcodes and a subset of Motorola directives
 * Kåre Andersen
   * support for most 020/030/040/060 instructions
+  * support for 68881/68882/040/060 FPU instructions
+  * support for (P)MMU instructions
   * support for most devpac and vasm directives
   * syntax highlighting enhancements
 
