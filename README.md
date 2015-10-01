@@ -23,5 +23,4 @@ To install the package language-m68k:
 
 ## TODO
 
-* support for FPU instructions
 * support for other processors from the DragonBall or ColdFire families
